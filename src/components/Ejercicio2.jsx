@@ -14,12 +14,18 @@ class Ejercicio2 extends React.Component {
             Crea un formulario para añadir información sobre libros a una lista.
             Ha de tener los siguientes campos:<b> - 1,25 puntos</b>
             <ul>
-              <li>Título</li>
-              <li>Autor</li>
+              <li for="nombre">Título:</li>
+              <input type="text" id="nombre" name="user_nombre" />
+
+              <li for="autor">Autor:</li>
+              <input type="text" id="autor" name="user_autor" />
               <li>Fecha de publicación (selector de fecha) </li>
+              <input id="date" type="date" />
               <li>Número de paginas (input numérico)</li>
+              <input type="input" id="nPaginas" name="user_nPaginas" />
               <li>Portada (URL de imagen)</li>
               <li>Idioma </li>
+              <input type="text" id="idioma" name="user_idioma" />
             </ul>
             Los elementos añadidos se irán introduciendo dentro de un Container
             de React-Bootstrap
